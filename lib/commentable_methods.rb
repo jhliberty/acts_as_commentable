@@ -12,9 +12,9 @@ module Juixe
         private
 
         def define_role_based_inflection(role)
-          return if method_defined?("#{role}_comments".to_sym)
+          return if method_defined?(:"#{role}_comments")
 
-          has_many "#{role}_comments".to_sym,
+          has_many :"#{role}_comments",
                    -> { where(role: role.to_s) },
                    **has_many_options(role)
         end
