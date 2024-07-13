@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Gem::Specification.new do |s|
   s.name = 'acts_as_commentable'
   s.version = '7.1.0'

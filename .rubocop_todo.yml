@@ -73,9 +73,6 @@ Style/Documentation:
 # SupportedStyles: always, always_true, never
 Style/FrozenStringLiteralComment:
   Exclude:
-    - 'Gemfile'
-    - 'Rakefile'
-    - 'acts_as_commentable.gemspec'
     - 'init.rb'
     - 'install.rb'
     - 'lib/acts_as_commentable.rb'
@@ -85,6 +82,3 @@ Style/FrozenStringLiteralComment:
     - 'lib/generators/comment/templates/comment.rb'
     - 'lib/generators/comment/templates/create_comments.rb'
     - 'rails/init.rb'
-    - 'test/acts_as_commentable_test.rb'
-    - 'test/models.rb'
-    - 'test/schema.rb'

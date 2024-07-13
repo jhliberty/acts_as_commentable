@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rake/testtask'
 
 desc 'Test the acts_as_commentable plugin.'
