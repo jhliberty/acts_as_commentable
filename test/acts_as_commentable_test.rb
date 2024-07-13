@@ -1,21 +1,21 @@
 require 'test/unit'
 require 'logger'
 require 'pry'
-require File.expand_path(File.dirname(__FILE__) + '/../rails/init')
+require File.expand_path("#{File.dirname(__FILE__)}/../rails/init")
 
 ActiveRecord::Migration.verbose = false
 ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: ':memory:')
 
 class ActsAsCommentableTest < Test::Unit::TestCase
   def setup_comments
-    require File.expand_path(File.dirname(__FILE__) + '/../lib/generators/comment/templates/create_comments')
+    require File.expand_path("#{File.dirname(__FILE__)}/../lib/generators/comment/templates/create_comments")
     CreateComments.up
-    load(File.expand_path(File.dirname(__FILE__) + '/../lib/generators/comment/templates/comment.rb'))
+    load(File.expand_path("#{File.dirname(__FILE__)}/../lib/generators/comment/templates/comment.rb"))
   end
 
   def setup_test_models
-    load(File.expand_path(File.dirname(__FILE__) + '/schema.rb'))
-    load(File.expand_path(File.dirname(__FILE__) + '/models.rb'))
+    load(File.expand_path("#{File.dirname(__FILE__)}/schema.rb"))
+    load(File.expand_path("#{File.dirname(__FILE__)}/models.rb"))
   end
 
   def setup
