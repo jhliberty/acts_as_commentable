@@ -64,7 +64,9 @@ module Juixe
 
               def self.find_#{method_name}_by_user(user)
                 commentable = self.base_class.name
-                Comment.where(["user_id = ? and commentable_type = ? and role = ?", user.id, commentable, "#{role}"]).order("created_at DESC")
+                Comment.where([
+                  "user_id = ? and commentable_type = ? and role = ?", user.id, commentable, "#{role}"
+                ]).order("created_at DESC")
               end
 
               def #{method_name}_ordered_by_submitted

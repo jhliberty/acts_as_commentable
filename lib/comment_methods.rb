@@ -29,7 +29,8 @@ module ActsAsCommentable
       # Helper class method to look up all comments for
       # commentable class name and commentable id.
       def find_comments_for_commentable(commentable_str, commentable_id, role = 'comments')
-        where(['commentable_type = ? and commentable_id = ? and role = ?', commentable_str, commentable_id, role]).order('created_at DESC')
+        where(['commentable_type = ? and commentable_id = ? and role = ?', commentable_str, commentable_id,
+               role]).order('created_at DESC')
       end
 
       # Helper class method to look up a commentable object
