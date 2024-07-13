@@ -77,7 +77,7 @@ module Juixe
                 comment.role = "#{role}"
                 #{method_name} << comment
               end
-            }
+            }, __FILE__, __LINE__ - 21
           end
         end
       end
