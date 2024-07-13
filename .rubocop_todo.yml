@@ -38,14 +38,6 @@ Metrics/MethodLength:
 Metrics/PerceivedComplexity:
   Max: 13
 
-# Offense count: 1
-# This cop supports unsafe autocorrection (--autocorrect-all).
-# Configuration parameters: EnforcedStyleForLeadingUnderscores.
-# SupportedStylesForLeadingUnderscores: disallowed, required, optional
-Naming/MemoizedInstanceVariableName:
-  Exclude:
-    - 'lib/generators/comment/comment_generator.rb'
-
 # Offense count: 2
 # Configuration parameters: NamePrefix, ForbiddenPrefixes, AllowedMethods, MethodDefinitionMacros.
 # NamePrefix: is_, has_, have_

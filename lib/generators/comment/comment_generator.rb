@@ -4,7 +4,7 @@ class CommentGenerator < Rails::Generators::Base
   include Rails::Generators::Migration
 
   def self.source_root
-    @_acts_as_commentable_source_root ||= File.expand_path('templates', __dir__)
+    @source_root ||= File.expand_path('templates', __dir__)
   end
 
   def self.next_migration_number(_path)
