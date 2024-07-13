@@ -103,12 +103,6 @@ Style/FrozenStringLiteralComment:
     - 'test/models.rb'
     - 'test/schema.rb'
 
-# Offense count: 1
-# This cop supports safe autocorrection (--autocorrect).
-Style/NegatedIfElseCondition:
-  Exclude:
-    - 'lib/commentable_methods.rb'
-
 # Offense count: 2
 # This cop supports safe autocorrection (--autocorrect).
 Style/RedundantDoubleSplatHashBraces:

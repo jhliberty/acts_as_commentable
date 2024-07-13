@@ -44,13 +44,13 @@ module Juixe
           class_attribute :comment_types
           self.comment_types = (comment_roles.blank? ? [:comments] : comment_roles)
 
-          if !comment_roles.blank?
+          if comment_roles.blank?
+            has_many :comments, **{ as: :commentable, dependent: :destroy }.merge(join_options)
+          else
             comment_roles.each do |role|
               define_role_based_inflection(role)
             end
             has_many :all_comments, **{ as: :commentable, dependent: :destroy, class_name: 'Comment' }.merge(join_options)
-          else
-            has_many :comments, **{ as: :commentable, dependent: :destroy }.merge(join_options)
           end
 
           comment_types.each do |role|
