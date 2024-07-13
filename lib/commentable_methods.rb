@@ -83,4 +83,4 @@ module Juixe
   end
 end
 
-ActiveRecord::Base.send(:include, Juixe::Acts::Commentable)
+ActiveRecord::Base.include Juixe::Acts::Commentable
