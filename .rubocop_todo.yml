@@ -18,14 +18,6 @@ Gemspec/AddRuntimeDependency:
 # This cop supports safe autocorrection (--autocorrect).
 # Configuration parameters: Severity, Include.
 # Include: **/*.gemspec
-Gemspec/DeprecatedAttributeAssignment:
-  Exclude:
-    - 'acts_as_commentable.gemspec'
-
-# Offense count: 1
-# This cop supports safe autocorrection (--autocorrect).
-# Configuration parameters: Severity, Include.
-# Include: **/*.gemspec
 Gemspec/RequireMFA:
   Exclude:
     - 'acts_as_commentable.gemspec'
