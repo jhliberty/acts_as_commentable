@@ -2,8 +2,8 @@ require 'active_record'
 
 # ActsAsCommentable
 module Juixe
-  module Acts #:nodoc:
-    module Commentable #:nodoc:
+  module Acts # :nodoc:
+    module Commentable # :nodoc:
       def self.included(base)
         base.extend ClassMethods
       end
