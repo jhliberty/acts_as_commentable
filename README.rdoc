@@ -13,6 +13,7 @@ Add the following line to your Gemfile
 
   gem 'acts_as_commentable', git: 'git@github.com:fatfreecrm/acts_as_commentable.git'
 
+Choose the appropriate tag for your rails version.
  
 == Generator
 
