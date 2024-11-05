@@ -2,10 +2,10 @@
 
 Gem::Specification.new do |s|
   s.name = 'acts_as_commentable'
-  s.version = '7.1.0'
+  s.version = '8.0.0.beta1'
 
   s.required_rubygems_version = Gem::Requirement.new('>= 0') if s.respond_to? :required_rubygems_version=
-  s.authors = ['Cosmin Radoi, Jack Dempsey, Xelipe, Chris Eppstein']
+  s.authors = ['Cosmin Radoi, Jack Dempsey, Xelipe, Chris Eppstein', 'John-Henry Liberty']
   s.autorequire = 'acts_as_commentable'
   s.description = 'Plugin/gem that provides comment functionality'
   s.email = 'unknown@juixe.com'
@@ -31,6 +31,6 @@ Gem::Specification.new do |s|
   s.summary = 'Plugin/gem that provides comment functionality'
   s.license = 'MIT'
 
-  s.add_dependency 'activerecord', '~> 7.1.0'
+  s.add_dependency 'activerecord', '~> 8.0.0.beta1'
   s.metadata['rubygems_mfa_required'] = 'true'
 end
